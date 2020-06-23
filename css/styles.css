@@ -1,0 +1,34 @@
+header, main, nav, footer {
+   text-align: center;
+}
+
+main {
+   display:flex;
+   justify-content: center;
+   color:white;
+   font-size:.9em;
+}
+
+body {
+   background-color:black;
+   color: white;
+}
+
+nav a { /*links with "nav" container */
+   padding: 15px;
+   padding-bottom:4px;
+   font-size:1.8em;
+   text-decoration:none; /*removes underline*/
+   color:white; /*by default, links are blue*/
+}
+
+nav a:hover { /*psudo class*/
+   border-bottom:2px orange solid;
+   font-size: 2em;
+   transition: .9s;
+   animation-play-state: paused;   
+}
+
+nav a.active{
+   color:red;
+}
