@@ -9,6 +9,10 @@ main {
    font-size:.9em;
 }
 
+.align-left{
+   text-align:left;
+}
+
 body {
    background-color:black;
    color: white;
@@ -31,4 +35,9 @@ nav a:hover { /*psudo class*/
 
 nav a.active{
    color:red;
+}
+
+.image-center {
+   display:flex;
+   justify-content:center;
 }
