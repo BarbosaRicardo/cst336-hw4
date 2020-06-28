@@ -21,60 +21,125 @@ Topics in MySQL
     <!-- This is the body -->
     <!-- This is where we place the content of our website -->
     <body>
-        <header>
-            <h1>Connecting MySQL</h1>
-        </header>
-        <hr />
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="../subtopic/java.html" >Java</a>
-            <a href="../subtopic/node.html" >Node</a>
-            <a href="../subtopic/python.html" >Python</a>
+        <header class="main-navigation">
+            <div class="container nav-container">
+                <div class="logo">
+                    <img src="./img/mysql-header.png">
+                    <h1>Connecting <br> MySQL</h1>
+                </div>
+                
 
-        </nav>
-
-        <br></br>
-
-        <main class="left-justify">
-            <figure>
-                <img src="img/index.png" alt="Picture of MySQL logo" />
-            </figure>
-            <div class="align-left">
-                <p>
-                    Hello all and thank you for visiting this short MySQL tutorial site on using 
-                    databases with various computer languages.  Please join us as we cover the use 
-                    of MySQL with Java, Node.js, and Python! 
-                </p>
-
-                <p>
-                    MySQL was created in May 23, 1995 and is a compoound of co-founder Michael Widenius'
-                    daughter, "My", and "SQL", Structured Query Language.
-                </p>
-
-                <p>
-                    In short, MySQL is a powerful database management system with opensource software that 
-                    is fast, reliable, scalable, and easy to learn. 
-                </p>
-
-                <p>
-                    Please browse through the links to dive deeper into subtopics on how to connect MySQL
-                    with Java, Node, and Python! 
-                </p>
+                <nav>
+                    <a href="index.html" class="active">Home</a>
+                    <a href="../subtopic/java.html" >Java</a>
+                    <a href="../subtopic/node.html" >Node</a>
+                    <a href="../subtopic/python.html" >Python</a>
+        
+                </nav>
             </div>
-        </main>
+        </header>
+        
+        <hr />
+       
+
+        
+        <div class="container-main">
+            <main class="left-justify">
+                <div class="align-left">
+                    <img src="img/index.png" alt="Picture of MySQL logo" />
+                    <p>
+                        Connecting to Databases Since <br><br>May 23, 1995
+                    </p>
+                </div>
+                
+                </div>
+            </main>
+            <section class="body-section">
+                <p class="underlined-welcome">
+                    Welcome!
+                </p>
+                <br></br>
+                <p class="short-body">
+                    Hello all and thank you for visiting this short MySQL tutorial site on using 
+                        databases with various computer languages.  MySQL is an open source database management
+                        system that is available on most OS platforms. Currently, it runs on BSD Unix. Linux,
+                        Windows, or Mac OS. You are welcome to browse through each
+                        language to see how each language connects to MySQL. Thank you again and welcome!
+                </p>
+
+            </section>
+
+            <div class="body-container">
+                <section >
+                    <p class="image-title">
+                        Java + MySQL
+                    </p>
+                    <a href="../subtopic/java.html">
+                        <img src="img/mysql-java.jpg" alt="Image of Mysql logo and Java logo" >
+                    </a>
+                </section>
+
+                <section class="right-content">
+                    <p class="body-paragraphs">
+                        To connect to MySQL in Java, MySQL implements the Java Database Connection (JDBC)
+                        API with a driver. The JDBC API defines how a client may apply CRUD operations;
+                        oriented toward relational databases.
+                    </p>
+                </section>
+            </div>
+
+            <div class="body-container">
+                <section class="right-content">
+                    <p class="body-paragraphs">
+                        To connect to MySQL in Java, MySQL implements the Java Database Connection (JDBC)
+                        API with a driver. The JDBC API defines how a client may apply CRUD operations;
+                        oriented toward relational databases. 
+                    </p>
+                </section>
+                <section >
+                    <p class="image-title">
+                        Node + MySQL
+                    </p>
+                    <a href="../subtopic/node.html">
+                    <img src="img/nodejs-mysql-black.png" alt="Image of MySQL logo and Node logo" >
+                    </a>
+                </section>
+            </div>
+
+            <div class="body-container">
+                <section >
+                    <p class="image-title">
+                        Python + MySQL
+                    </p>
+                    <a href="../subtopic/python.html">
+                    <img src="img/Mysql-python.png" alt="image of python logo and mysql logo">
+                    </a>
+                </section>
+
+                <section class="right-content">
+                    <p class="body-paragraphs">
+                        To connect to MySQL in Java, MySQL implements the Java Database Connection (JDBC)
+                        API with a driver. The JDBC API defines how a client may apply CRUD operations;
+                        oriented toward relational databases.
+                    </p>
+                </section>
+            </div>
+            
+        
 
         
         
         <!-- This is the footer -->
         <!-- The footer goes inside the body but not always -->
+        <hr>
         <footer>
-            <hr>
+            <img src="../img/csumb.png" alt="csumb logo" />
             CST336 Internet Programming 2020&copy; Barbosa <br />
             Homework Assignment 1
-        </footer>
-        <figure class="footer-image">
-            <img src="img/csumb.png" alt="csumb logo" />
+        <figure class="image-center">
+            
         </figure>
+      </footer>
         <!-- closing footer -->
         
     </body>
