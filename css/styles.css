@@ -200,8 +200,8 @@ nav a.active{
  }
 
  figure:hover img{
-   -webkit-transform: scale(1.2);
-   transform: scale(1.2);  
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);  
    transition: 0.9s;
    transition-timing-function: ease-out;
    
