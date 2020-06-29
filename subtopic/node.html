@@ -24,7 +24,7 @@ Topics in MySQL
         <header class="main-navigation">
             <div class="container nav-container">
                 <div class="logo">
-                    <img src="../img/mysql-header.png">
+                    <img src="../img/mysql-header.png" alt="image of myswl logo">
                     <h1>Connecting <br> MySQL</h1>
                 </div>
                 
@@ -43,34 +43,31 @@ Topics in MySQL
        
 
         
-        <div class="container-main">
+        <div class="container-main-node">
             <main class="left-justify">
                 <div class="align-left">
-                    <img src="../img/index.png" alt="Picture of MySQL logo" />
-                    <p>
-                        Connecting to Databases Since <br><br>May 23, 1995
-                    </p>
+                    <img src="../img/nodejs-mysql-black.png">
+                    
                 </div>
                 
                 </div>
             </main>
             <section class="body-section">
-                <p class="underlined-welcome">
-                    Welcome!
+                <p class="underlined-source">
+                    Getting Ready!
                 </p>
                 <br></br>
                 <p class="short-body">
-                    Hello all and thank you for visiting this short MySQL tutorial site on using 
-                        databases with various computer languages.  MySQL is an open source database management
-                        system that is available on most OS platforms. Currently, it runs on BSD Unix. Linux,
-                        Windows, or Mac OS. You are welcome to browse through each
-                        language to see how each language connects to MySQL. Thank you again and welcome!
+                   You will need to do two things before you can start with MySQL
+                   in Node.JS: make sure MySQL is installed and install npm module.
                 </p>
 
             </section>
 
-            <div class="body-container">
-                <section >
+            
+
+            <!-- <div class="body-container">
+                <!-- <section >
                     <p class="image-title">
                         Java + MySQL
                     </p>
@@ -79,18 +76,53 @@ Topics in MySQL
                             <img src="../img/mysql-java.jpg" alt="Image of Mysql logo and Java logo" class="round-border" >
                         </a>
                     </figure>
-                </section>
+                </section> --> 
 
-                <section class="right-content">
-                    <p class="body-paragraphs">
-                        To connect to MySQL in Java, MySQL implements the Java Database Connection (JDBC)
-                        API with a driver. The JDBC API defines how a client may apply CRUD operations;
-                        oriented toward relational databases.
-                    </p>
-                </section>
-            </div>
+                <div class="body-container">
+                    <ul>
+                        <li>
+                           First, import the mysql module 
+                        </li>
+                        <br>
+                        <li>
+                           Second, create a connection to the MySQL database that calls the 
+                           createConnection() method; which has 4 parameters to fill out: host,
+                           user, password, and database.
+                        </li>
+                        <br>
+                        <li>
+                           Third, call the connect() method on the connection object to connect to the 
+                           MySQL database server.  The connect() method will accept a callback function
+                           that has the error argument what provides debugging detail.
+                        </li>
+                        <br>
+                        <li>
+                           Finally, to close the connection, one must call the end() method on the connection
+                           object.  This ensures that the queries remaining are always executed before the
+                           database connection closed.
+                        </li>
+        
+                     </ul>
+                </div>
 
-            <div class="body-container-right">
+                <div class="body-section">
+                    <div class="underlined-source">
+                        Source
+                    </div>
+                </div>
+                
+                <div class="body-container">
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/hGZX_SA7lYg" 
+                    frameborder="0" allow="accelerometer; autoplay; 
+                    encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                </div>
+
+                
+           
+
+            <!-- <div class="body-container-right">
                 <section class="left-content">
                     <p class="body-paragraphs">
                         To connect to MySQL in Java, MySQL implements the Java Database Connection (JDBC)
@@ -129,7 +161,7 @@ Topics in MySQL
                         oriented toward relational databases.
                     </p>
                 </section>
-            </div>
+            </div> -->
             
         
 
