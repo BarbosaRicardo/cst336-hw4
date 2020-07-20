@@ -12,15 +12,15 @@ app.get("/", function(req, res){
 });//routes
 
 app.get("/java", function(req,res){
-   res.render("java.html");
+   res.render("java.ejs");
 });//GET mercury
 
 app.get("/node", function(req,res){
-   res.render("node.html");
+   res.render("node.ejs");
 });//GET venus
 
 app.get("/python", function(req,res){
-   res.render("python.html")
+   res.render("python.ejs")
 });//GET earth
 
 //variables 
