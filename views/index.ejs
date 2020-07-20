@@ -1,43 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<!--
-
-Ricardo Barbosa 
-CST336 Hw 1
-Topics in MySQL
-
--->
-
-<!-- This is the head -->
-<!-- All styles and javascript go inside the head -->
-    <head>
-        <meta charset="utf-8" />
-        <title>MySQL Topics</title>
-        <link href="../css/styles.css" rel="stylesheet" type="text/css" />
-        
-    </head>
-<!-- closing head -->
-
-    <!-- This is the body -->
-    <!-- This is where we place the content of our website -->
-    <body>
-        <header class="main-navigation">
-            <div class="container nav-container">
-                <div class="logo">
-                    <img src="../img/mysql-header.png" alt="logo">
-                    <h1>Connecting <br> MySQL</h1>
-                </div>
-                
-
-                <nav>
-                    <a href="../index.html" class="active">Home</a>
-                    <a href="../subtopic/java.html" >Java</a>
-                    <a href="../subtopic/node.html" >Node</a>
-                    <a href="../subtopic/python.html" >Python</a>
-        
-                </nav>
-            </div>
-        </header>
+<%- include('partials/header.ejs') %>
         
         <hr />
        
@@ -46,9 +7,9 @@ Topics in MySQL
         <div class="container-main">
             <main class="left-justify">
                 <div class="align-left">
-                    <img src="../img/index.png" alt="Picture of MySQL logo" />
+                    <img src="/img/index.png" alt="Picture of MySQL logo" />
                     <p>
-                        Connecting to Databases Since <br><br>May 23, 1995
+                        <em> "<%= catchPhrase %>"</em> <br><br><em>Since May 23, 1995</em>
                     </p>
                 </div>
             </main>
@@ -76,8 +37,8 @@ Topics in MySQL
                         Java + MySQL
                     </p>
                     <figure>
-                        <a href="../subtopic/java.html">
-                            <img src="../img/mysql-java2.jpg" alt="Image of Mysql logo and Java logo" class="round-border" >
+                        <a href="/java.html">
+                            <img src="/img/mysql-java2.jpg" alt="Image of Mysql logo and Java logo" class="round-border" >
                         </a>
                     </figure>
                 </div>
@@ -106,8 +67,8 @@ Topics in MySQL
                         Node + MySQL
                     </p>
                     <figure>
-                        <a href="../subtopic/node.html">
-                        <img src="../img/nodejs-mysql-black.png" alt="Image of MySQL logo and Node logo" class="round-border" >
+                        <a href="/node.html">
+                        <img src="/img/nodejs-mysql-black.png" alt="Image of MySQL logo and Node logo" class="round-border" >
                         </a>
                     </figure>
                 </div>
@@ -121,8 +82,8 @@ Topics in MySQL
                         Python + MySQL
                     </p>
                     <figure>
-                        <a href="../subtopic/python.html">
-                        <img src="../img/Mysql-python.png" alt="image of python logo and mysql logo" class="round-border">
+                        <a href="python.html">
+                        <img src="/img/Mysql-python.png" alt="image of python logo and mysql logo" class="round-border">
                         </a>
                     </figure>
                 </div>
@@ -143,18 +104,4 @@ Topics in MySQL
         
         <!-- This is the footer -->
         <!-- The footer goes inside the body but not always -->
-        <hr>
-        <footer>
-            <img src="../img/csumb.png" alt="csumb logo" />
-            CST336 Internet Programming 2020&copy; Barbosa <br />
-            Homework Assignment 1
-        <figure class="image-center">
-            
-        </figure>
-      </footer>
-        <!-- closing footer -->
-        
-    </body>
-    <!-- closing body -->
-
-</html>
+        <%- include('partials/footer.ejs') %>
