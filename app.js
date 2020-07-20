@@ -6,7 +6,7 @@ app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
 
 //routes
-app.get("/index", function(req, res){
+app.get("/", function(req, res){
    let phrase = {catchPhrase: faker.company.catchPhrase()}
    res.render("index.ejs", phrase);
 });//routes
